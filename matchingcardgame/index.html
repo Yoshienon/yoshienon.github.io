@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Matching Card Game</title>
+</head>
+
+<body>
+    <h1 class="page-title">Matching Card Game</h1>
+    
+    <div class="overlay-text visible"> 
+        <p class="overlay-text-smaller"> A witch infiltrated the royal castle and she challenged the princess into a battle of wits <br> Win this card game and drive the witch out of the castle before she puts a curse on everyone </p>
+    Click to Start
+    </div>
+
+    <div id="game-over-text" class="overlay-text"> 
+        <p class="overlay-text-smaller"> You failed to drive the witch out of the castle <br> she has now cursed you and everyone in the kingdom
+    </p>
+    GAME OVER
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    
+    <div id="victory-text" class="overlay-text"> 
+        <p class="overlay-text-smaller"> You successfully defeated the witch <br> It is time to celebrate </p>
+    VICTORY
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/accessory.png">
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/apple.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/book.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/cauldron.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/crystal.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/dress.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/mirror.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/witch.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/accessory.png">
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/apple.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/book.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/cauldron.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/crystal.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/dress.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/mirror.png">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="border border-top-left" src="Assets/Images/border.png">
+                <img class="border border-top-right" src="Assets/Images/border.png">
+                <img class="border border-bottom-left" src="Assets/Images/border.png">
+                <img class="border border-bottom-right" src="Assets/Images/border.png">
+                <img class="crown" src="Assets/Images/crown.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="crown card-value" src="Assets/Images/witch.png">
+            </div>
+        </div>
+
+</body>
+</html>
