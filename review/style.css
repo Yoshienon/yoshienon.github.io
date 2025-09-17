@@ -1,0 +1,31 @@
+* {
+    padding: 10;
+    margin: 10;
+}
+
+html {
+    background-color: rgb(116, 23, 23);
+}
+
+table {
+    background-color: rgb(203, 203, 203);
+    
+}
+
+img {
+    width: 200px;
+    border-radius: 500px;
+}
+
+.students_list {
+    text-align: center;
+}
+
+.name_header, .course_header {
+    background-color: grey;
+}
+
+.m_callangan, .b_bantigue, .callangan_course, .bantigue_course {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
