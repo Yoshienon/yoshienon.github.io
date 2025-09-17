@@ -2,7 +2,10 @@
     font-size: xx-large;
 }
 
-.eggs_favorite {
+.eggs_favorite_text {
     text-align: center;
 }
 
+.sign_up_text {
+    font-size: 20px;
+}
